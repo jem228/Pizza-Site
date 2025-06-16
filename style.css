@@ -17,7 +17,7 @@ body {
 }
 
 .columns-cha{
-  background-color: white;
+  background-color: rgb(232, 112, 0);
   display: flex;
   flex-direction: column;
   height: 520px;
@@ -25,7 +25,7 @@ body {
 
 .columns-cart{
   width:500px ;
-  background-color: white;
+  background-color: rgb(232, 112, 0);
   display: flex;
   flex-direction: column;
   height: 520px;
@@ -37,7 +37,7 @@ body {
 }
 
 .site-header{
-  background-color: rgb(242, 242, 242);
+  background-color: rgb(213, 103, 0);
 }
 
 .nav{
@@ -137,8 +137,7 @@ body {
 }
 
 .order-btn {
-  background-color: #ff8c00;
-  color: #fff;
+  background-color: white;
   border: none;
   padding: 12px 25px;
   border-radius: 10px;
@@ -277,6 +276,7 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
+  background-color: white;
 
   border-radius: 20px;
   width: 200px;

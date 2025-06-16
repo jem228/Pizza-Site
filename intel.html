@@ -7,122 +7,86 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <script src="script.js"></script>
   <div class="container">
    
       <header class="site-header">
-      <div class="logo">🍕</div>
-      <nav class="nav">
-        <a href="#" class="nav-icon active">📖</a>
-        <a href="#" class="nav-icon">👤</a>
-        <a href="#" class="nav-icon">🛒</a>
-        <a href="#" class="nav-icon">⚙️</a>
-      </nav>
+      <div class="logo"></div>
+      <div class="nav">
+        <a href="intel_menu.html" class="nav-icon">📖 Меню</a>
+        <a href="intel_cart.html" class="nav-icon">🛒 Корзина</a>
+        <a href="#" class="nav-icon">👤 Акаунт</a>
+        <a href="#" class="nav-icon">⚙️ Налаштування</a>
+      </div>
     </header>
-
-    
     <main class="main-content">
-      <header class="top-bar">
-        <div class="greeting">
-          <p>Привіт, ...</p>
-          <h2>Ласкаво просимо назад</h2>
-        </div>
-        <input type="text" class="search" placeholder="🔍 Пошук..." />
-        <div class="user-info">
-          <img src="data:image/png;base64,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" alt="User" class="avatar">
-          <span>Користувач</span>
-        </div>
-      </header>
 
-      <section class="promo">
-        <div class="promo-text">
-          <h2>Зроби перше замовлення та отримай <span>50% знижки</span></h2>
-          <p>У публікаціях з графічним дизайном Lorem Ipsum використовується як заповнювач</p>
-          <button class="order-btn">Замовити зараз</button>
-        </div>
-        <div class="promo-img">
-          <img src="pizza-mushroom.png" alt="Pizza Promo">
-        </div>
-      </section>
+<div class="columns"><p></p></div>
+  <div class="columns-cha">
+  <div class="top-bar">
+    <div class="greeting">
+      <p>Привіт, ...</p>
+      <h2>Ласкаво просимо назад</h2>
+    </div>
+  </div>
 
-      <section class="categories">
-        <h3>Наше меню</h3>
-        <div class="tabs">
-          <button class="tab active">🍕 Піца</button>
-          <button class="tab">🥤 Напої</button>
-          <button class="tab">🧂 Соуси</button>
-        </div>
-      </section>
+  <section class="promo">
+    <div class="promo-text">
+      <h2>Зроби перше замовлення та отримай <span>50% знижки</span></h2>
+      <p>У публікаціях з графічним дизайном Lorem Ipsum використовується як заповнювач</p>
+      <button class="order-btn">Замовити зараз</button>
+    </div>
+    <div class="promo-img">
+      <img src="pizza-mushroom.png" alt="Pizza Promo">
+    </div>
+  </section>
 
-      <section class="products">
-        <div class="card">
-          <img src="pizza-pepperoni.png" alt="Пепероні">
-          <h4>Піца Пепероні</h4>
-          <p>14-20 хв</p>
-          <span class="price">$12</span>
-          <button class="add-btn">+</button>
-        </div>
+  <section class="categories">
+    <h3>Наше меню</h3>
+    <div class="tabs">
+      <button class="tab active">🍕 Піца</button>
+      <button class="tab ">🥤 Напої</button>
+      <button class="tab ">🧂 Соуси</button>
+    </div>
+  </section>
 
-        <div class="card">
-          <img src="pizza-cheese.png" alt="З сиром">
-          <h4>Піца з сиром</h4>
-          <p>16-25 хв</p>
-          <span class="price">$14</span>
-          <button class="add-btn">+</button>
-          </div>
-           <div class="card">
-          <img src="" alt="З сиром">
-          <h4>Піца Маргарита</h4>
-          <p>16-25 хв</p>
-          <span class="price">$11</span>
-          <button class="add-btn">+</button>
-          </div>
-           <div class="card">
-          <img src="pizza-cheese.png" alt="З сиром">
-          <h4>Піца Гавайська</h4>
-          <p>15-20 хв</p>
-          <span class="price">$14</span>
-          <button class="add-btn">+</button>
-        </div>
-      </section>
-    </main>
-    <aside class="cart">
-      <div class="card-info" id="card-info" style="display: none;">
-        <div class="card-bg"></div>
-        <div class="card-content">
-          <p>Universal Card</p>
-          <h3>5214 4587 9658 1452</h3>
-          <p>Користувач</p>
-        </div>
-      </div>
+  <section class="products">
+    <div class="card">
+      <img src="pizza-pepperoni.png" alt="Пепероні">
+      <h4>Піца Пепероні</h4>
+      <p>14-20 хв</p>
+      <span class="price">$12</span>
+      <button class="add-btn">+</button>
+    </div>
 
-      <div class="order-menu">
-        <h3>Ваше замовлення</h3>
-        <div class="order-item">
-          <img src="pizza-mushroom.png" alt="Pizza">
-          <div>
-            <p>Піца Маргарита</p>
-            <span>$11</span>
-          </div>
-          <div class="quantity">01</div>
-        </div>
-        <div class="order-item">
-          <img src="meat.png" alt="Meat">
-          <div>
-            <p>Піца Гавайска</p>
-            <span>$14</span>
-          </div>
-          <div class="quantity">01</div>
-        </div>
-        <div class="total">
-          <p>Всього:</p>
-          <h3>$25.00</h3>
-        </div>
-        <button class="checkout-btn" onclick="toggleCard()">Оплатити</button>
+    <div class="card">
+      <img src="pizza-cheese.png" alt="З сиром">
+      <h4>Піца з сиром</h4>
+      <p>16-25 хв</p>
+      <span class="price">$14</span>
+      <button class="add-btn">+</button>
+    </div>
 
-    
-    
-      </div>
-    </aside>
+    <div class="card">
+      <img src="" alt="З сиром">
+      <h4>Піца Маргарита</h4>
+      <p>16-25 хв</p>
+      <span class="price">$11</span>
+      <button class="add-btn">+</button>
+    </div>
+
+    <div class="card">
+      <img src="pizza-cheese.png" alt="З сиром">
+      <h4>Піца Гавайська</h4>
+      <p>15-20 хв</p>
+      <span class="price">$14</span>
+      <button class="add-btn">+</button>
+    </div>
+  </section>
+</div>
+<div class="columns"><p></p></div>
+     </main>
+
   </div>
 </body>
 </html>

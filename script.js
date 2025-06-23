@@ -70,3 +70,52 @@ function login() {
 }
 
 
+//////////////////////////////////////////////
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const cartBtn = document.getElementById("cartToggle");
+  const cartPanel = document.getElementById("cartPanel");
+  const cartList = document.getElementById("cartItems");
+  const MAX_CART_ITEMS = 15;
+
+  cartBtn.addEventListener("click", () => {
+    cartPanel.classList.toggle("show");
+    renderCart();
+  });
+
+  window.addToCart = function (productName) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    if (cart.length >= MAX_CART_ITEMS) {
+      alert("Максимальна кількість товарів у корзині досягнута!");
+      return;
+    }
+
+    cart.push(productName);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    renderCart();
+  };
+
+  window.clearCart = function () {
+    localStorage.removeItem("cart");
+    renderCart();
+  };
+
+  function renderCart() {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cartList.innerHTML = "";
+
+    if (cart.length === 0) {
+      cartList.innerHTML = "<li>Корзина порожня</li>";
+    } else {
+      cart.forEach((item, index) => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        cartList.appendChild(li);
+      });
+    }
+  }
+
+  renderCart(); // оновлюємо при запуску
+});

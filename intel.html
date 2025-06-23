@@ -12,7 +12,7 @@
     <div class="logo">🍕 Піца Сайт</div>
     <nav class="nav">
       <a id="togglePanel"> Профіль</a>
-      <a id="#">Корзина</a>
+      <a id="cartToggle">Корзина</a>
       <a id="scrollBtn">Меню</a>
       <a id="scrollBtn_0">Коментарії</a>
       <a id="scrollBtn_1">Контакти</a>
@@ -29,6 +29,14 @@
 
     <button onclick="login()">Увійти</button>
   </div>
+
+
+
+<div id="cartPanel">
+  <h2>Корзина</h2>
+  <ul id="cartItems"></ul>
+  <button onclick="clearCart()">Замовити</button>
+</div>
 
 
   <main>
@@ -52,35 +60,35 @@
           <h4>Піца з сиром</h4>
           <p>16-25 хв</p>
           <span class="price">$14</span>
-          <button class="add-btn">+</button>
+          <button class="add-btn" onclick="addToCart('Піца з сиром')">+</button>
         </div>
 
         <div class="card">
           <h4>Піца Маргарита</h4>
           <p>16-25 хв</p>
           <span class="price">$11</span>
-          <button class="add-btn">+</button>
+          <button class="add-btn" onclick="addToCart('Піца Маргарита')">+</button>
         </div>
 
         <div class="card">
           <h4>Піца Гавайська</h4>
           <p>15-20 хв</p>
           <span class="price">$14</span>
-          <button class="add-btn">+</button>
+          <button class="add-btn" onclick="addToCart('Піца Гавайська')">+</button>
         </div>
 
         <div class="card">
           <h4>Піца Пепероні</h4>
           <p>20-30 хв</p>
           <span class="price">$15</span>
-          <button class="add-btn">+</button>
+          <button class="add-btn" onclick="addToCart('Піца Пепероні')">+</button>
         </div>
 
         <div class="card">
           <h4>Піца Вегетаріанська</h4>
           <p>18-25 хв</p>
           <span class="price">$13</span>
-          <button class="add-btn">+</button>
+          <button class="add-btn" onclick="addToCart('Піца Вегетаріанська')">+</button>
         </div>
       </div>
     </section>

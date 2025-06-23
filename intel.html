@@ -2,91 +2,89 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pizza Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Піца сайт</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <script src="script.js"></script>
-  <div class="container">
-   
-      <header class="site-header">
-      <div class="logo"></div>
-      <div class="nav">
-        <a href="intel_menu.html" class="nav-icon">📖 Меню</a>
-        <a href="intel_cart.html" class="nav-icon">🛒 Корзина</a>
-        <a href="#" class="nav-icon">👤 Акаунт</a>
-        <a href="#" class="nav-icon">⚙️ Налаштування</a>
+  <header class="main-header">
+    <div class="logo">🍕 Піца Сайт</div>
+    <nav class="nav">
+      <a href="#">Головна</a>
+      <a href="#">Меню</a>
+      <a href="#">Про нас</a>
+      <a href="#">Контакти</a>
+      <a href="#">Зареєструватися</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="promo">
+      <div class="promo-text">
+        <h1>Найсмачніша піца для замовлення Онлайн!</h1>
+        <p>Замов онлайн і отримай знижку -50%</p>
+        <button>Замовити зараз</button>
       </div>
-    </header>
-    <main class="main-content">
+    </section>
 
-<div class="columns"><p></p></div>
-  <div class="columns-cha">
-  <div class="top-bar">
-    <div class="greeting">
-      <p>Привіт, ...</p>
-      <h2>Ласкаво просимо назад</h2>
+    <section class="info">
+      <h2>Що ми пропонуємо?</h2>
+      <p>Тільки свіжі інгредієнти та швидка доставка. Створюємо піцу з душею для вас.</p>
+    </section>
+
+    <section class="menu">
+      <div class="cards-container">
+        <div class="card">
+          <h4>Піца з сиром</h4>
+          <p>16-25 хв</p>
+          <span class="price">$14</span>
+          <button class="add-btn">+</button>
+        </div>
+
+        <div class="card">
+          <h4>Піца Маргарита</h4>
+          <p>16-25 хв</p>
+          <span class="price">$11</span>
+          <button class="add-btn">+</button>
+        </div>
+
+        <div class="card">
+          <h4>Піца Гавайська</h4>
+          <p>15-20 хв</p>
+          <span class="price">$14</span>
+          <button class="add-btn">+</button>
+        </div>
+
+        <div class="card">
+          <h4>Піца Веганська</h4>
+          <p>16-25 хв</p>
+          <span class="price">$10</span>
+          <button class="add-btn">+</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-left">
+      <p><strong>📞 Телефон:</strong> (043) 123-4567</p>
+      <p><strong>📍 Адреса:</strong> вул. Старопіцерійська 12, Київ</p>
     </div>
+    <div class="footer-right">
+      <p><strong>Години роботи:</strong><br>Пн-Пт: 9:00–22:00<br>Сб-Нд: 11:00–23:00</p>
+    </div>
+    <p class="copyright">© 2025 Pizza Site. Усі права захищено.</p>
+  </footer>
+
+  <div class="cookie-banner" id="cookieBanner">
+    🍪 Ми використовуємо cookie для покращення сервісу.
+    <button onclick="acceptCookies()">Добре</button>
   </div>
+  <script src="script.js">
+  </script>
 
-  <section class="promo">
-    <div class="promo-text">
-      <h2>Зроби перше замовлення та отримай <span>50% знижки</span></h2>
-      <p>У публікаціях з графічним дизайном Lorem Ipsum використовується як заповнювач</p>
-      <button class="order-btn">Замовити зараз</button>
-    </div>
-    <div class="promo-img">
-      <img src="pizza-mushroom.png" alt="Pizza Promo">
-    </div>
-  </section>
 
-  <section class="categories">
-    <h3>Наше меню</h3>
-    <div class="tabs">
-      <button class="tab active">🍕 Піца</button>
-      <button class="tab ">🥤 Напої</button>
-      <button class="tab ">🧂 Соуси</button>
-    </div>
-  </section>
-
-  <section class="products">
-    <div class="card">
-      <img src="pizza-pepperoni.png" alt="Пепероні">
-      <h4>Піца Пепероні</h4>
-      <p>14-20 хв</p>
-      <span class="price">$12</span>
-      <button class="add-btn">+</button>
-    </div>
-
-    <div class="card">
-      <img src="pizza-cheese.png" alt="З сиром">
-      <h4>Піца з сиром</h4>
-      <p>16-25 хв</p>
-      <span class="price">$14</span>
-      <button class="add-btn">+</button>
-    </div>
-
-    <div class="card">
-      <img src="" alt="З сиром">
-      <h4>Піца Маргарита</h4>
-      <p>16-25 хв</p>
-      <span class="price">$11</span>
-      <button class="add-btn">+</button>
-    </div>
-
-    <div class="card">
-      <img src="pizza-cheese.png" alt="З сиром">
-      <h4>Піца Гавайська</h4>
-      <p>15-20 хв</p>
-      <span class="price">$14</span>
-      <button class="add-btn">+</button>
-    </div>
-  </section>
-</div>
-<div class="columns"><p></p></div>
-     </main>
-
-  </div>
+ 
 </body>
 </html>

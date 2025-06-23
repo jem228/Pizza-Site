@@ -7,19 +7,29 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <script src="script.js" defer></script>
   <header class="main-header">
     <div class="logo">🍕 Піца Сайт</div>
     <nav class="nav">
-      <a href="#">Головна</a>
-      <a href="#">Меню</a>
-      <a href="#">Про нас</a>
-      <a href="#">Контакти</a>
-      <a href="#">Доставка</a>
-      <a href="#">Акції</a>
-      <a href="#">Відгуки</a>
-      <a href="#">Профіль</a>
+      <a id="togglePanel"> Профіль</a>
+      <a id="#">Корзина</a>
+      <a id="scrollBtn">Меню</a>
+      <a id="scrollBtn_0">Коментарії</a>
+      <a id="scrollBtn_1">Контакти</a>
     </nav>
   </header>
+
+  <div id="sidePanel">
+    <h2>Увійти</h2>
+    <label for="username">Ім'я:</label>
+    <input type="text" id="username" placeholder="Ваше ім’я">
+
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" placeholder="Ваш пароль">
+
+    <button onclick="login()">Увійти</button>
+  </div>
+
 
   <main>
     <section class="promo">
@@ -30,13 +40,14 @@
       </div>
     </section>
 
-    <section class="info">
+    
+    <section id="menu">
+    <div class="info">
       <h2>Що ми пропонуємо?</h2>
       <p>Тільки свіжі інгредієнти та швидка доставка. Створюємо піцу з душею для вас.</p>
-    </section>
+    </div>
 
-    <section class="menu">
-      <div class="cards-container">
+      <div class="cards-list">
         <div class="card">
           <h4>Піца з сиром</h4>
           <p>16-25 хв</p>
@@ -73,8 +84,31 @@
         </div>
       </div>
     </section>
+
+  <section id="reviews">
+  <div class="info_2">
+  <h2>Відгуки наших клієнтів</h2>
+  </div>
+
+  <div class="review-list">
+    <div class="review">
+      <p class="review-text">"Неймовірно смачна піца! Доставка швидка, персонал привітний."</p>
+      <p class="review-author">— Оксана, Київ</p>
+    </div>
+    <div class="review">
+      <p class="review-text">"Замовляв вже тричі — завжди гаряча і свіжа піца. Рекомендую!"</p>
+      <p class="review-author">— Ігор, Київ</p>
+    </div>
+    <div class="review">
+      <p class="review-text">"Оригінальний смак, особливо мені сподобалась 'Пепероні'. Ще замовлятиму."</p>
+      <p class="review-author">— Марія,  Київ</p>
+    </div>
+  </div>
+</section>
+
   </main>
 
+  <section id="footer_js">
   <footer class="footer">
     <div class="footer-left">
       <p><strong>📞 Телефон:</strong> (043) 123-4567</p>
@@ -85,6 +119,6 @@
     </div>
     <p class="copyright">© 2025 Pizza Site. Усі права захищено.</p>
   </footer>
-  </script>
+  </section>
 </body>
 </html>

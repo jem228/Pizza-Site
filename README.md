@@ -1,58 +1,47 @@
 ## Pizza-Site
 
-Pizza-Site – це вебсайт, присвячений смачній піці! Користувачі можуть переглядати меню, дізнаватися про інгредієнти, оформлювати замовлення та залишати відгуки.
+Pizza-Site is a site dedicated to delicious pizza! Users can browse the menu, learn about products, place orders and leave reviews.
 
-# Зміст
+# Table of Contents
 
--[Технології](#Технології)
+-[Technology](#Technology)
 
--[Початок](#Початок)
+-[Home](#Home)
 
--[Меню](#Меню)
+-[Menu](#Menu)
 
--[Команда](#Команда)
+-[Team](#Team)
 
--[Контакти](#контакти)
+-[Contacts](#contacts)
 
--[Відгуки](#Відгуки)
+-[Reviews](#Reviews)
 
-# Технології
-     -HTML
-     -CSS
-     -JavaScript 
-# Початок
-    12.05.2025
+# Technologies
+-HTML
+-CSS
+-JavaScript 
+# Home
+05/12/2025
 
-# Меню
-* Маргарита: (томатний соус, моцарела, базилік) - від 150 грн
+# Menu
 
- * Пепероні: (томатний соус, моцарела, пепероні) - від 170 грн
+ Margherita: (tomato sauce, mozzarella, basil) - 456.31 UAH
 
- * Карбонара: (вершковий соус, моцарела, бекон, пармезан, яйце) - від 190 грн
+* Pepperoni: (tomato sauce, mozzarella, pepperoni) - 497.77 UAH
 
- * Чотири сири: (моцарела, горгонзола, пармезан, проволоне) - від 200 грн
+* Four cheeses: (mozzarella, gorgonzola, parmesan, provolone) - 580.75 UAH
 
- * Гаваї: (томатний соус, моцарела, шинка, ананас) - від 180 грн
+* Hawaii: (tomato sauce, mozzarella, ham, pineapple) - 580.75 UAH
 
- * Вегетаріана: (томатний соус, моцарела та різноманітні овочі: гриби, перець, цибуля, оливки, помідори) - від 175 грн
+# Team
+-Author: [Andriy](#https://github.com/alsquin)
 
- * М'ясна: (томатний соус, моцарела та різні види м'яса: ковбаски, шинка, бекон, салямі) - від 210 грн
+-Author: [Volodya](#htttps://github.com/jem228)
 
- * Діабло: (томатний соус, моцарела, гостра салямі, перець чилі) - від 195 грн
+# Contacts
+Andriy +23975856856
 
- * Капрічоза: (томатний соус, моцарела, шинка, гриби, артишоки, оливки) - від 185 грн
+Volodya +15436363519
 
- * Фрутті ді Маре: (томатний соус, моцарела, морепродукти: креветки, кальмари, мідії) - від 250 грн
- 
-# Команда
-      -Автор: [Андрій](https://github.com/alsquin)
-      
-      -Автор: [Володя](htttps://github.com/jem228)
-
-# Контакти
-    Андрій +380639889192
-
-    Володя +380671390360
-
-# Відгуки
-     Ще нема
+# Reviews
+None yet

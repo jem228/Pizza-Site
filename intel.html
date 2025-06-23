@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Піца сайт</title>
+  <title>Ретро Піца</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -14,7 +14,10 @@
       <a href="#">Меню</a>
       <a href="#">Про нас</a>
       <a href="#">Контакти</a>
-      <a href="#">Зареєструватися</a>
+      <a href="#">Доставка</a>
+      <a href="#">Акції</a>
+      <a href="#">Відгуки</a>
+      <a href="#">Профіль</a>
     </nav>
   </header>
 
@@ -22,8 +25,8 @@
     <section class="promo">
       <div class="promo-text">
         <h1>Найсмачніша піца для замовлення Онлайн!</h1>
-        <p>Замов онлайн і отримай знижку -50%</p>
-        <button>Замовити зараз</button>
+        <p class="discount">Замов онлайн і отримай знижку -50%</p>
+        <button onclick="addToCart()">Замовити зараз</button>
       </div>
     </section>
 
@@ -56,12 +59,18 @@
         </div>
 
         <div class="card">
-          <h4>Піца Веганська</h4>
-          <p>16-25 хв</p>
-          <span class="price">$10</span>
+          <h4>Піца Пепероні</h4>
+          <p>20-30 хв</p>
+          <span class="price">$15</span>
           <button class="add-btn">+</button>
         </div>
 
+        <div class="card">
+          <h4>Піца Вегетаріанська</h4>
+          <p>18-25 хв</p>
+          <span class="price">$13</span>
+          <button class="add-btn">+</button>
+        </div>
       </div>
     </section>
   </main>
@@ -76,15 +85,6 @@
     </div>
     <p class="copyright">© 2025 Pizza Site. Усі права захищено.</p>
   </footer>
-
-  <div class="cookie-banner" id="cookieBanner">
-    🍪 Ми використовуємо cookie для покращення сервісу.
-    <button onclick="acceptCookies()">Добре</button>
-  </div>
-  <script src="script.js">
   </script>
-
-
- 
 </body>
 </html>

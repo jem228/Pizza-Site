@@ -1,6 +1,3 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Gidole&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200..700&display=swap');
-
 body {
   margin: 0;
   font-family: 'Comic Sans MS', cursive, sans-serif;
@@ -48,12 +45,12 @@ body {
 
 .promo h1 {
   font-size: 40px;
-  color: #000000;
+  color: #000;
 }
 
 .promo-text p {
-  color: #ffffff;
-  font-size: 40px;
+  color: #111;
+  font-size: 18px;
   font-weight: bold;
 }
 
